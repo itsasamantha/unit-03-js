@@ -9,17 +9,25 @@
 <body>
 
         <h1> Color Changing Website</h1>
-        <h4>Normal Button</h4>
+        <label>Normal Button</label>
         <button onclick = "normal()">Normal</button>
-        <h4>Old Button</h4>
+        <br>
+        <label>Old Button</label>
         <button onclick = "old()">Old Style</button>
-        <h4>Crazy Button</h4>
+        <br>
+        <label>Crazy Button</label>
         <button onclick = "crazy()">Crazy Style</button>
-        <h4>Reset Button</h4>
+        <br>
+        <label>Random Button</label>
+        <button onclick = "random()">Random Style</button>
+        <br>
+        <label>Reset Button</label>
         <button onclick = "reset()">Reset</button>
+        
 
     <script>
-        const colors = ["aliceBlue", "antiqueWhite", "aqua", "aquamarine","azure","beige","bisque", "black", "blanchedAlmond", "blue", "blueViolet", "brown", "burlyWood"]
+        const colors = ["aliceBlue","antiqueWhite","aqua","aquamarine","azure","beige","bisque","black ","blanchedAlmond","blue","blueViolet","brown","burlyWood","cadetBlue ","chartreuse ","chocolate ","coral ","cornflowerBlue ","cornsilk ","crimson ","cyan ","darkBlue ","darkCyan ","darkGoldenRod ","darkGray ","darkGreen ","darkKhaki ","darkMagenta ","darkOliveGreen ","darkOrange ","darkOrchid ","darkRed ","darkSalmon ","darkSeaGreen ","darkSlateBlue ","darkSlateGray ","darkTurquoise ","darkViolet ","deepPink ","deepSkyBlue ","dimGray ","dodgerBlue ","fireBrick ","floralWhite ","forestGreen ","fuchsia ","gainsboro ","ghostWhite ","gold ","goldenRod ","gray ","green ","greenYellow ","honeyDew ","hotPink ","indianRed  ","indigo   ","ivory ","khaki ","lavender ","lavenderBlush ","lawnGreen ","lemonChiffon ","lightBlue ","lightCoral ","lightCyan ","lightGoldenRodYellow ","lightGrey ","lightGreen ","lightPink ","lightSalmon ","lightSeaGreen ","lightSkyBlue ","lightSlateGray ","lightSteelBlue ","lightYellow ","lime ","limeGreen ","linen ","magenta ","maroon ","mediumAquaMarine ","mediumBlue ","mediumOrchid ","mediumPurple ","mediumSeaGreen ","mediumSlateBlue ","mediumSpringGreen ","mediumTurquoise ","mediumVioletRed ","midnightBlue ","mintCream ","mistyRose ","moccasin ","navajoWhite ","navy ","oldLace ","olive ","oliveDrab ","orange ","orangeRed ","orchid ","paleGoldenRod ","paleGreen ","paleTurquoise ","paleVioletRed ","papayaWhip ","peachPuff ","peru ","pink ","plum ","powderBlue ","purple ","red ","rosyBrown ","royalBlue ","aliceBlue ","antiqueWhite ","aqua ","aquamarine ","azure ","beige ","bisque ","black ","blanchedAlmond ","blue ","blueViolet ","brown ","burlyWood ","cadetBlue ","chartreuse ","chocolate ","coral ","cornflowerBlue ","cornsilk ","crimson ","cyan ","darkBlue ","darkCyan ","darkGoldenRod ","darkGray ","darkGreen ","darkKhaki ","darkMagenta ","darkOliveGreen ","darkorange ","darkOrchid ","darkRed ","darkSalmon ","darkSeaGreen ","darkSlateBlue ","darkSlateGray ","darkTurquoise ","darkViolet ","deepPink ","deepSkyBlue ","dimGray ","dodgerBlue ","fireBrick ","floralWhite ","forestGreen ","fuchsia ","gainsboro ","ghostWhite ","gold ","goldenRod ","gray ","green ","greenYellow ","honeyDew ","hotPink ","indianRed  ","indigo   ","ivory ","khaki ","lavender ","lavenderBlush ","lawnGreen ","lemonChiffon ","lightBlue ","lightCoral ","lightCyan ","lightGoldenRodYellow ","lightGrey ","lightGreen ","lightPink ","lightSalmon ","lightSeaGreen ","lightSkyBlue ","lightSlateGray ","lightSteelBlue ","lightYellow ","lime ","limeGreen ","linen ","magenta ","maroon ","mediumAquaMarine ","mediumBlue ","mediumOrchid ","mediumPurple ","mediumSeaGreen ","mediumSlateBlue ","mediumSpringGreen ","mediumTurquoise ","mediumVioletRed ","midnightBlue ","mintCream ","mistyRose ","moccasin ","navajoWhite ","navy ","oldLace ","olive ","oliveDrab ","orange ","orangeRed ","orchid ","paleGoldenRod ","paleGreen ","paleTurquoise ","paleVioletRed ","papayaWhip ","peachPuff ","peru ","pink ","plum ","powderBlue ","purple ","red ","rosyBrown ","royalBlue ","saddleBrown ","Salmon ","sandyBrown ","seaGreen ","seaShell ","sienna ","silver ","skyBlue ","slateBlue ","slateGray ","snow ","springGreen ","steelBlue ","Tan ","teal ","thistle ","tomato ","turquoise ","violet ","wheat White ","whiteSmoke ","yellow ","yellowGreen "];
+        const fonts = ["timesNewRoman","georgia","garamond","arial","verdana","helvetica","courierNew","lucidaConsole","monaco","brushScripMT","lucidaHandwriting","copperplate","papyrus"];
         function old(){
             document.body.style.backgroundColor = "black";
             document.body.style.color = "Chartreuse";
@@ -43,12 +51,12 @@
             document.body.style.color = "black";
             document.body.style.fontSize = "16px";
             document.body.style.fontFamily = "timesNewRoman"; 
-        }
+        }      
         function random(){
+            document.body.style.backgroundColor = colors[Math.random() * (255-1) +1];
+            document.body.style.color = colors[Math.random() * (255-1) +1];
+            document.body.style.fontFamily = fonts[Math.random() * (13-1) +1]
 
-        }
-        function randomize(){
-            
         }
     </script>
 </body>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two</title>
+</head>
+<body>
+    <h1>Lesson 02 - User Interactivity</h1>
+    <label>Name:</label>
+    <input id ="name">
+    <br><br>
+    <button onclick="submit()">Submit Name</button>
+    <h1 id="hi"></h1>
+    <script>
+        let nameInput = document.getElementById("name");
+        let hi = document.getElementById("hi");
+        console.log(nameInput.value);
+        function submit(){
+            console.log(nameInput.value);
+            hi.innerText = "Hi, " + nameInput.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLibs</title>
+</head>
+<body>
+    <h1>Welcome to the madlibs game!!!!</h1>
+    <h3>The apotheosis is upon us!!!</h3>
+    <h6>Please enter the following categories.</h6>
+    <label>Town name:</label>
+    <input id ="town">
+    <br><br>
+    <label>Name:</label>
+    <input id ="name">
+    <br><br>
+    <label>Noun:</label>
+    <input id ="nounOne">
+    <br><br>
+    <label>Drink:</label>
+    <input id ="drink">
+    <br><br>
+    <label>Relationship:</label>
+    <input id ="relationshipOne">
+    <br><br>
+    <label>Noun:</label>
+    <input id ="nounTwo">
+    <br><br>
+    <label>Action (related to first noun):</label>
+    <input id ="action">
+    <br><br>
+    <label>Color (please use simple colors like blue or green):</label>
+    <input id ="color">
+    <br><br>
+    <label>job:</label>
+    <input id ="job">
+    <br><br>
+    <label>Relationship:</label>
+    <input id ="relationshipTwo">
+    <br><br>
+    <button onclick="submit()">Submit</button>
+    <br><br><br><br>
+    <p id="fin"></p>
+    <script>
+        let town = document.getElementById("town");
+        let nameInput = document.getElementById("name");
+        let nounOne = document.getElementById("nounOne");
+        let drink = document.getElementById("drink");
+        let relationshipOne = document.getElementById("relationshipOne");
+        let nounTwo = document.getElementById("nounTwo");
+        let action = document.getElementById("action");
+        let color = document.getElementById("color");
+        let job = document.getElementById("job");
+        let relationshipTwo = document.getElementById("relationshipTwo");
+
+        function submit(){
+            fin.innerText = "In the town of" + town.value + "lived a guy named"+ nameInput.value +". " + nameInput.value + "was your normal average guy except he had a strong phobia of" + nounOne.value + ". In fact sitting in a "+ nounOne.value+ "would have been "+ nameInput.value + "own personal nightmare. After a long day of work "+ nameInput.value + " always enjoys a cup of _____ from the store his_____ worked at. However all this would soon change as a ______ hit_______. The day after ," + nameInput.value + " heads to work again. He notices that everyone has suddenly started to _______ all the time. Living in his nightmare, _____ heads to work where he finds his boss also_____. Escaping from his workplace "+ nameInput.value + " heads to the store to get_______. Only there he finds that all the employees except his ____ is also _____. Finding out that the ___ was poisoned with a _____ goop, they escape and meet up with ____ unaffected coworkers.Realizing that this is the apocalypse they retreat to a retired _____’s  underground bunker. But a call from the coworkers ______ forces _____ to go back outside. Only to find out that the ____ had been infected, trapping the two in the building and infecting the coworker. _____ escapes and returns to the bunker saving the others from the ____ going rouge. Abandoned by the coworkers ____ remains with his ______ and blows up the _____ killing the leader of the alien hive mind, ending the apocalyptic world. Or so he had hoped, insead ___ was infected and the aliens won then taking over the world."
+
+
+
+        } 
+        
+    </script>
+</body>
+</html>
